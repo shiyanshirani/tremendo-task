@@ -1,4 +1,5 @@
-# Tremendo MicroBlog Django
+# Tremendo Micro Blog Django
+## A student teacher micro blog multirole auth system.
 ## Running the Project Locally
 
 First, clone the repository to your local machine:
