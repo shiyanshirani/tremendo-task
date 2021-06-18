@@ -1,5 +1,12 @@
 {% extends 'microblog/layout.html' %}
 
 {% block content %}
-    <h1>Register</h1>
+    <div class="content-section">
+        <form action="{% url 'blog-home' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name='Name' placeholder="Your name"/>
+            <input type="submit", value="save"/>
+            <small class="text-muted">Already Have an Account? <a class=" ml-2" href="#"></a></small>
+        </form>
+    </div> 
 {% endblock content %}
