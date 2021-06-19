@@ -36,4 +36,4 @@ class Batch(models.Model):
     completed_classes = models.IntegerField()
 
     def __str__(self):
-        return f"{self.teacher}"
+        return f"{self.teacher}, {self.student}, {self.total_classes}, {self.completed_classes}"
