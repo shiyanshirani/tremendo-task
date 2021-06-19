@@ -30,7 +30,7 @@ class Student(models.Model):
         return f"{self.name}, {self.email}, {self.gender}, {self.address}, {self.batch}"
 
 class Batch(models.Model):
-    teacher = models.CharField(max_length=100)
+    teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
     student = models.CharField(max_length=100)
     total_classes = models.IntegerField() 
     completed_classes = models.IntegerField()
