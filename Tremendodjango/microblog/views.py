@@ -9,3 +9,6 @@ def login(request):
 
 def login_page(request):
     return render(request, 'microblog/login_page.html')
+
+def about(request):
+    return render(request, 'microblog/about.html')
