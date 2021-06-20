@@ -2,7 +2,7 @@
 
 {% block content %}
   {% if user.is_authenticated %}
-    <h1>You are logged in {{ username }}</h1>
+    <h1>You are logged in {{ user.username }}</h1>
   {% else %}
     <h2>Welcome to the Tremendo! <span class="icon-emo-happy"></span></h2>
     <p class="lead">
